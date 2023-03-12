@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MusicsBookWeb.Models;
+using MusicsBook.Models;
 using System.Diagnostics;
 
 namespace MusicsBookWeb.Controllers

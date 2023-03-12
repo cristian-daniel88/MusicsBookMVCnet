@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using MusicsBookWeb.Data;
+using MusicsBook.DataAccess.Repository;
+using MusicsBook.DataAccess.Repository.IRepository;
+using MusicsBookWeb.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +11,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options=> options.UseSqlServ
     builder.Configuration.GetConnectionString("DefaultConnection")
     ));
 
-
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

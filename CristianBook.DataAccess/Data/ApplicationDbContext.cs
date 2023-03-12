@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MusicsBookWeb.Models;
+using MusicsBook.Models;
 
-namespace MusicsBookWeb.Data
+
+namespace MusicsBookWeb.DataAccess
 {
     public class ApplicationDbContext:DbContext
     {
